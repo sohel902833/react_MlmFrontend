@@ -1,0 +1,73 @@
+.purchase_body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+.purchase_container {
+  background: #fff;
+}
+.purchase_body p,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+.purchase_body p {
+  margin-top: 1px;
+  margin-bottom: 0px;
+  background: #fff;
+}
+.chain_name_btn {
+  border: 1px solid #ff9800;
+  outline: none;
+  background: #fff;
+  color: #ff9800;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.purchase_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.purchase_center img {
+  margin-top: 20px;
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.copy_address_btn {
+  border: 1px solid #ff9800;
+  width: 200px;
+  outline: none;
+  background: #fff;
+  color: #ff9800;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.full_width_btn {
+  border: none;
+  width: 100%;
+  outline: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.purchase_body input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: #eceff0;
+}
+.margin_bottom {
+  margin-bottom: 8px;
+}

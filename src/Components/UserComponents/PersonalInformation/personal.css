@@ -1,0 +1,25 @@
+.personal_information_container {
+  background: #fff;
+  overflow: scroll;
+}
+.personal_information_body {
+  padding: 15px;
+}
+.center_image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.center_image img {
+  width: 120px;
+}
+.personal_information_body h3 {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.personal_information_body p {
+  margin-bottom: 2px;
+  margin-left: 10px;
+}

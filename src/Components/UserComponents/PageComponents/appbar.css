@@ -1,0 +1,31 @@
+.app_bar_container {
+  width: 100%;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 5px 0px #000;
+  justify-content: space-between;
+  z-index: 100;
+}
+.app_left {
+  display: flex;
+  align-items: center;
+}
+.app_left img {
+  margin-left: 10px;
+  margin-right: 5px;
+  width: 30px;
+}
+.logo_title {
+  font-weight: bolder;
+  color: #000;
+  word-spacing: 1px;
+  margin-left: 15px;
+  font-size: 25px;
+}
+.page_title {
+  margin-right: 10px;
+  font-weight: bolder;
+}

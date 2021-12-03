@@ -1,0 +1,67 @@
+.member_container {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+}
+.member_header {
+  width: 100%;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.member_details {
+  z-index: 10;
+}
+.membership_details_card {
+  background: #f3a501;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -50px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.membership_details_card p {
+  color: white;
+  margin: 0;
+}
+
+.membership_lists2 {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+}
+.membership_item2 {
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 1px #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.m_right {
+  margin-left: 10px;
+}
+.m_right h4 {
+  color: #000;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+.m_right p {
+  margin: 0;
+  padding: 0;
+}
+
+.m_left img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}

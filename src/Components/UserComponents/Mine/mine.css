@@ -1,0 +1,149 @@
+.mine_container {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.notification_indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  top: 0;
+  margin-left: -10px;
+  z-index: 200;
+  right: 0;
+}
+.user_section {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.user_options {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.icons {
+  display: flex;
+}
+.icons img {
+  width: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.profile_section {
+  display: flex;
+  align-items: center;
+}
+.profile_left img {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profile_right p {
+  color: white;
+  font-weight: bolder;
+  margin: 0;
+}
+.profile_current_level {
+  background: #ffdc04;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-around;
+  margin-top: 10px;
+  z-index: 5;
+}
+.profile_current_level img {
+  width: 40px;
+  height: 40px;
+}
+.profile_current_level > div p,
+h3 {
+  margin-left: 10px;
+  color: #fff;
+}
+.functions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.function {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+.function img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.balance_container {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.balance_item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.balance_item h4,
+h3 {
+  color: #000;
+}
+
+.balance_item h3 {
+  font-weight: bolder;
+}
+
+.information_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.information_item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: center;
+}
+.information p {
+  text-align: center;
+}
+.information img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.card {
+  border: 2px solid #000;
+  margin-top: 10px;
+}

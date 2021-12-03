@@ -1,0 +1,35 @@
+.purchase_type {
+  display: flex;
+  justify-content: center;
+}
+.purchase_type button {
+  width: 120px;
+  margin: 20px;
+  padding: 15px;
+  color: #fff;
+  background: chocolate;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.accept {
+  width: 70px;
+  margin: 10px;
+  padding: 5px;
+  color: #fff;
+  background: green;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+.reject {
+  width: 70px;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  background: red;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}

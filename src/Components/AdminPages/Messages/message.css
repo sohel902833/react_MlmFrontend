@@ -1,0 +1,196 @@
+.message_container {
+  max-width: 100vw;
+  background: white;
+  height: 85vh;
+  box-sizing: border-box;
+  display: flex;
+}
+.conversation_list {
+  overflow: scroll;
+  width: 20%;
+  box-sizing: border-box;
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+.conversation_list a {
+  text-decoration: none;
+}
+.message_box_container {
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.m_header {
+  top: 0;
+  position: absolute;
+  position: sticky;
+  height: 60px;
+  z-index: 100;
+}
+.m_footer {
+  bottom: 0;
+  position: absolute;
+  position: sticky;
+  height: 60px;
+  z-index: 100;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.m_main {
+  height: 100%;
+  overflow: scroll;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.m_header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.sidebar_icon {
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
+.close_icon {
+  align-self: flex-end;
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.conversation_item {
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.conversation_item h2 {
+  font-size: 18px;
+}
+.conversation_item h3 {
+  font-size: 17px;
+}
+.conversation_item h4 {
+  font-size: 14px;
+}
+.receive_message {
+  justify-self: self-start;
+  margin-right: 20%;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #fff;
+}
+.send_message {
+  justify-self: self-end;
+  margin-left: 20%;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.send_message h2 {
+  padding: 10px;
+  border-radius: 20px;
+  background: #009688;
+}
+.receive_message h2 {
+  padding: 10px;
+  border-radius: 20px;
+  background: #e91e63;
+}
+
+.send_message h2,
+.receive_message h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.input_title {
+  width: 80%;
+}
+.input_title input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: #eceff0;
+}
+.send_button,
+.add_Image {
+  cursor: pointer;
+}
+
+.new_message_container {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.new_message_container {
+  margin-bottom: 0px;
+}
+.new_message {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.new_message > div {
+  padding: 5px;
+  background: #457889;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+  .message_box_container {
+    width: 100vw;
+  }
+  .conversation_list {
+    flex-basis: 0%;
+    overflow: scroll;
+    transition: 0.5s;
+    margin-left: 0;
+    display: none;
+    flex-basis: 25%;
+    position: fixed;
+    color: #fff;
+    z-index: 99;
+    top: 50px;
+    align-self: flex-start;
+    margin-left: -24px;
+    padding: 10px;
+    width: 250px;
+    background: #fff;
+    height: 90vh;
+  }
+  .sidebar_icon {
+    padding: 10px;
+    display: block;
+  }
+  .close_icon {
+    display: block;
+  }
+}

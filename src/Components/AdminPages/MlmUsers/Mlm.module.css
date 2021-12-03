@@ -1,0 +1,28 @@
+.mlm_container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  box-sizing: border-box;
+  background: whitesmoke;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.mlm_container > div {
+  min-width: 250px;
+  max-width: 350px;
+  cursor: pointer;
+  border-right: 2px solid #000;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.user {
+  margin: 10px;
+  border: 1px solid #457879;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+}

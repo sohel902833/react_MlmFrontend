@@ -1,0 +1,18 @@
+.team_report_container {
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+.team_report_body {
+  padding: 20px;
+}
+.refer_user_item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 3px 0px #000;
+  border-radius: 10px;
+}
+.refer_user_item p {
+  margin-bottom: 0px;
+}

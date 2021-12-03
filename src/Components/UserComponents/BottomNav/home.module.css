@@ -1,0 +1,27 @@
+body {
+  background: #b3b1b1;
+}
+.main_container {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.bottom_nav {
+  position: sticky;
+  width: inherit;
+  max-width: inherit;
+  bottom: 0;
+}
+.page_header {
+  height: 70px;
+  position: sticky;
+  width: inherit;
+  max-width: inherit;
+  top: 0;
+  z-index: 10;
+}
+.content {
+}

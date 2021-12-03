@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+.main_container {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+}
+.message_icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 20px;
+  z-index: 100;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 0px #000;
+  padding: 15px;
+  cursor: pointer;
+}
+.main_layout {
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+}
+.active_bottom {
+  color: red;
+}
+.app_bar {
+  top: 0;
+  position: absolute;
+  position: sticky;
+  height: 60px;
+  z-index: 100;
+}
+.main_content {
+  background: #fff;
+  height: 100%;
+  overflow: scroll;
+}
+.bottom_nav {
+  height: 80px;
+  bottom: 0;
+  position: absolute;
+  position: sticky;
+  height: 60px;
+}

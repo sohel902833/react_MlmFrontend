@@ -1,0 +1,41 @@
+.withdraw_modal_container {
+  width: 500px;
+  z-index: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px #000;
+  padding: 10px;
+}
+.modal_close {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.modal_body h5 {
+  text-align: center;
+}
+.modal_body p {
+  margin-bottom: 0px;
+}
+
+.withdraw_modal_container input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: #eceff0;
+}
+
+@media only screen and (max-width: 720px) {
+  .withdraw_modal_container {
+    width: 80%;
+  }
+}
