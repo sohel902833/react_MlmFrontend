@@ -50,6 +50,23 @@ function PurchaseRequest() {
       }
     }
   };
+  const rejectRequest = async (id) => {
+    if (window.confirm("Reject Request")) {
+      setAcceptLoading(true);
+      const res = await axiosPost(
+        `admin/package/reject/${id}`,
+        localStorage.getItem("admin-token"),
+        {}
+      );
+      setAcceptLoading(false);
+      if (res.status === 201) {
+        const fData = dataList.filter((d) => d.id !== id);
+        setDataList(fData);
+      } else {
+        alert(res?.data?.message);
+      }
+    }
+  };
 
   if (loading) return <Loader loading={loading} />;
 
@@ -109,7 +126,11 @@ function PurchaseRequest() {
                       </button>
                     </td>
                     <td style={{ padding: `0px` }}>
-                      <button disabled={acceptLoading} className="reject">
+                      <button
+                        onClick={() => rejectRequest(data?.id)}
+                        disabled={acceptLoading}
+                        className="reject"
+                      >
                         Reject
                       </button>
                     </td>

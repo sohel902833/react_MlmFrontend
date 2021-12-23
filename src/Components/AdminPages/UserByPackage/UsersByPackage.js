@@ -61,12 +61,16 @@ function Usersbypackage() {
     );
     setLoading(false);
     if (res.status === 201) {
-      setUsers(res.data.user);
+      setUsers([]);
+      setUsers((prevUser) => {
+        return res.data.user;
+      });
+      console.log(res?.data.user);
+      console.log({ users });
     } else {
       alert("Setting Not Found.");
     }
   };
-
   if (loading) return <Loader loading={loading} />;
   return (
     <AdminLayout>

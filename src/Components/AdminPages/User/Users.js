@@ -20,9 +20,12 @@ function Users() {
     if (text) {
       const newUser = users.filter((user) => {
         const userId = "" + user?.userId;
-        if (user?.phone?.includes(text) || userId.includes(text)) {
-          return user;
+        if (userId.search(text) === 0) {
+          return true;
         }
+        // if (user?.phone?.includes(text) || userId.includes(text)) {
+        //   return user;
+        // }
       });
       if (newUser.length > 0) {
         setUsers(newUser);
@@ -31,6 +34,7 @@ function Users() {
       getUsers();
     }
   };
+
   const getUsers = async () => {
     setLoading(true);
     const res = await axiosGet(
@@ -45,18 +49,37 @@ function Users() {
     }
   };
 
+  const searchUsers = async () => {
+    if (searchText) {
+      setLoading(true);
+      const res = await axiosGet(
+        `admin/user/search/${searchText}`,
+        localStorage.getItem("admin-token")
+      );
+      setLoading(false);
+      if (res.status === 201) {
+        setUsers([]);
+        setUsers((p) => res.data?.users);
+      }
+    }
+  };
+
   if (loading) return <Loader loading={loading} />;
   return (
     <>
-      <input
-        ref={inputRef}
-        onChange={(e) => changeValue(e)}
-        value={searchText}
-        type="text"
-        required
-        placeholder="Search User Email,Phone,UID"
-        icon="search"
-      />
+      <div>
+        <input
+          ref={inputRef}
+          onChange={(e) => setSearchText(e.target.value)}
+          value={searchText}
+          type="text"
+          required
+          placeholder="Search User Email,Phone,UID"
+          icon="search"
+        />
+        <button onClick={() => searchUsers()}>Search</button>
+        <button onClick={() => getUsers()}>Refresh</button>
+      </div>
 
       <br />
       <hr />
