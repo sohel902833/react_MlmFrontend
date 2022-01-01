@@ -5,17 +5,17 @@
   position: relative;
 }
 .order_dashboard {
-  background: #f0c508;
+  background: red;
   border-radius: 10px;
   padding: 10px;
 }
 .order_dashboard h3 {
   font-weight: bolder;
-  color: rgb(114, 8, 8);
+  color: white;
 }
 .order_dashboard h4 {
   font-weight: bolder;
-  color: rgb(114, 8, 8);
+  color: white;
 }
 .progress_container {
   display: flex;

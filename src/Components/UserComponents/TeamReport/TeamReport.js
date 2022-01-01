@@ -16,54 +16,40 @@ function TeamReport() {
 
   const [referUserList, setReferUserList] = React.useState([]);
   React.useEffect(() => {
-    getReferUser();
+    getUserGeneration();
   }, []);
 
-  const getReferUser = async () => {
+  const getUserGeneration = async () => {
     setGen2View(false);
     setGen3View(false);
     setGen1View(true);
     setTitle("Team Report Generation 1");
 
     const res = await axiosGet(
-      "user/refer-user",
+      "user/generation",
       localStorage.getItem("token")
     );
-    console.log(res?.data?.users);
     setLoading(false);
     if (res.status === 201) {
-      setReferUserList(res?.data?.users);
+      setReferUserList(res?.data);
     }
   };
 
-  const getLevel2 = async (referCode) => {
-    setTitle(`Team Report Generation 2 : (${referCode})`);
-    setGen1View(false);
+  const enableGen1 = () => {
+    setGen1View(!gen1View);
+    setGen2View(false);
     setGen3View(false);
-    setGen2View(true);
-    const res = await axiosGet(
-      `user/refer/user/${referCode}`,
-      localStorage.getItem("token")
-    );
-    console.log(res?.data?.users);
-    setLoading(false);
-    if (res.status === 201) {
-      setReferUserList(res?.data?.users);
-    }
   };
-  const getLevel3 = async (referCode) => {
-    setTitle(`Team Report Generation 3 : (${referCode})`);
+
+  const enableGen2 = () => {
+    setGen1View(false);
+    setGen2View(!gen2View);
+    setGen3View(false);
+  };
+  const enableGen3 = () => {
     setGen1View(false);
     setGen2View(false);
-    setGen3View(true);
-    const res = await axiosGet(
-      `user/refer/user/${referCode}`,
-      localStorage.getItem("token")
-    );
-    setLoading(false);
-    if (res.status === 201) {
-      setReferUserList(res?.data?.users);
-    }
+    setGen3View(!gen3View);
   };
 
   return (
@@ -71,31 +57,29 @@ function TeamReport() {
       <div className="team_report_container">
         <AppBar title={title} backUrl="/" />
         <div className="team_report_body">
-          <h4 style={{ cursor: "pointer" }} onClick={() => getReferUser()}>
+          <h4 style={{ cursor: "pointer" }} onClick={() => enableGen1()}>
             Generation 1
           </h4>
           {loading ? (
             <BeatLoader loading={loading} />
           ) : gen1View ? (
-            referUserList.map((user) => (
-              <TeamItem getUser={getLevel2} user={user} />
-            ))
+            referUserList?.firstGen?.map((user) => <TeamItem user={user} />)
           ) : null}
-          <h4 style={{ cursor: "pointer" }}>Generation 2</h4>
+          <h4 onClick={() => enableGen2()} style={{ cursor: "pointer" }}>
+            Generation 2
+          </h4>
           {loading ? (
             <BeatLoader loading={loading} />
           ) : gen2View ? (
-            referUserList.map((user) => (
-              <TeamItem getUser={getLevel3} user={user} />
-            ))
+            referUserList?.secondGen?.map((user) => <TeamItem user={user} />)
           ) : null}
-          <h4 style={{ cursor: "pointer" }}>Generation 3</h4>
+          <h4 onClick={() => enableGen3()} style={{ cursor: "pointer" }}>
+            Generation 3
+          </h4>
           {loading ? (
             <BeatLoader loading={loading} />
           ) : gen3View ? (
-            referUserList.map((user) => (
-              <TeamItem getUser={() => console.log("Here")} user={user} />
-            ))
+            referUserList?.thirdGen?.map((user) => <TeamItem user={user} />)
           ) : null}
         </div>
       </div>

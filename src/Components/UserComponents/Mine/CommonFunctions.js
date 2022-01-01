@@ -3,8 +3,8 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../../context/AuthContext";
 import appDownloadImg from "../../../images/app_download.png";
-import dailyReportImg from "../../../images/daily_repor.png";
-import incomeBreakDownImg from "../../../images/incme_breakdown.png";
+import dailyReportImg from "../../../images/daily_report.png";
+import incomeBreakDownImg from "../../../images/income_breakdown.png";
 import joinCommunityImg from "../../../images/join_community.png";
 import logoutImg from "../../../images/logout.png";
 import personalInformationImg from "../../../images/personal_information.png";
@@ -35,15 +35,14 @@ function Commonfunctions() {
             image={personalInformationImg}
           />
           <Informationitem
-            callMethod={() => history.push("/team-report")}
-            text="Team Report"
-            image={teamReportImg}
+            callMethod={() => history.push("/daily-report")}
+            text="Daily Report"
+            image={dailyReportImg}
           />
-
           <Informationitem
-            callMethod={openJoinCommunity}
-            text="Join Community"
-            image={joinCommunityImg}
+            callMethod={() => history.push("/income-breakdown")}
+            text="Income Breakdown"
+            image={incomeBreakDownImg}
           />
         </div>
         <div className="information_item">
@@ -58,16 +57,16 @@ function Commonfunctions() {
             image={withdrawImg}
           />
           <Informationitem
-            callMethod={() => history.push("/daily-report")}
-            text="Daily Report"
-            image={dailyReportImg}
+            callMethod={openJoinCommunity}
+            text="Join Community"
+            image={joinCommunityImg}
           />
         </div>
         <div className="information_item">
           <Informationitem
-            callMethod={() => history.push("/income-breakdown")}
-            text="Income Breakdown"
-            image={incomeBreakDownImg}
+            callMethod={() => history.push("/team-report")}
+            text="Team Report"
+            image={teamReportImg}
           />
           <Informationitem
             callMethod={openAppLink}

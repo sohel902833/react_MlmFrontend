@@ -8,7 +8,7 @@
   padding: 10px;
 }
 .active_member {
-  background: #b40649;
+  background: red;
   border-radius: 10px;
   color: #fff;
   text-align: center;
@@ -19,7 +19,7 @@
   margin: 10px;
 }
 .active_task {
-  background: #b40649;
+  background: red;
 }
 .active_task h3 {
   color: #fff;
@@ -105,7 +105,7 @@
   padding: 10px;
   color: white;
   width: 100px;
-  background: #da880e;
+  background: red;
   font-weight: bolder;
   border: none;
 }

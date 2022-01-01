@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-import sunImg from "../../images/sun.png";
+import sunImg from "../../images/app_icon.jpeg";
 import "./page.css";
 function Pageheader({ text }) {
   return (
@@ -9,7 +9,7 @@ function Pageheader({ text }) {
         <img src={sunImg} alt="" />
 
         <Typography className="logo_title" variant="h6">
-          LIKE
+          BOOM CASH
         </Typography>
       </div>
       <div className="header_right">

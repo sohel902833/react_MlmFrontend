@@ -16,12 +16,15 @@
   z-index: 10;
 }
 .membership_details_card {
-  background: #f3a501;
+  background: red;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: -50px;
   border-radius: 15px;
   padding: 10px;
+}
+.membership_details_card h4 {
+  color: yellow;
 }
 .membership_details_card p {
   color: white;

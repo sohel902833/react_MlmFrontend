@@ -2,7 +2,7 @@ import { Card, CardContent } from "@material-ui/core";
 import React from "react";
 import { BeatLoader } from "react-spinners";
 import fbImage from "../../../images/facebook.png";
-import tiktakImg from "../../../images/tiktak.png";
+import tiktakImg from "../../../images/youtube.png";
 import { axiosPost } from "../../ApiCall/axiosApi";
 import "./order.css";
 

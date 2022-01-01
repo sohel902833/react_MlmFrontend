@@ -65,7 +65,7 @@ function Task({ navigateBottomBar }) {
           onClick={() => changeTaskType("Tiktak")}
           className={`task_brand ${taskType === "Tiktak" && `active_task`}`}
         >
-          <h3> Tiktak</h3>
+          <h3> Youtube</h3>
         </div>
       </div>
       <div className="membership_lists">

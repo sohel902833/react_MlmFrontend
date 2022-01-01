@@ -17,6 +17,7 @@
 }
 .header_left img {
   width: 50px;
+  margin-right: 10px;
 }
 .logo_title {
   font-weight: bolder;

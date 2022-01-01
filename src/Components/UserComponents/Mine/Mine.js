@@ -3,12 +3,12 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../../context/AuthContext";
 import useNewNotification from "../../../hooks/userNewNotification";
+import sunImg from "../../../images/app_icon.jpeg";
 import bgImg from "../../../images/bg.jpg";
 import inviteFrndsImg from "../../../images/invite_friends.png";
 import messageImg from "../../../images/msg.png";
 import profileImg from "../../../images/profile.png";
 import settingImg from "../../../images/setting.png";
-import sunImg from "../../../images/sun.png";
 import withdrawImg from "../../../images/withdraw.png";
 import { copy } from "../../lib/copyContent";
 import Loader from "../Loader";
@@ -80,10 +80,10 @@ function Mine() {
         <div style={{ display: "flex", alignItems: "center" }}>
           <img src={sunImg} alt="" />
 
-          <h3 style={{ fontWeight: "bolder" }}>LIKE</h3>
+          <h3 style={{ fontWeight: "bolder", color: "white" }}>BOOM CASH</h3>
         </div>
         <div>
-          <h4 style={{ color: "#000" }}>
+          <h4 style={{ color: "white" }}>
             Current Level :{" "}
             {currentUser?.currentMembership?.levelName
               ? currentUser?.currentMembership?.levelName

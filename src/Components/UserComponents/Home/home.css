@@ -13,6 +13,9 @@
   align-items: center;
   padding: 10px;
 }
+.home_item img {
+  width: 50px;
+}
 .home_item {
   box-sizing: border-box;
   width: 95%;

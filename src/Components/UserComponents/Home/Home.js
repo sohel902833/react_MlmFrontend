@@ -7,8 +7,8 @@ import facebookImg from "../../../images/facebook.png";
 import helpCenterImg from "../../../images/help_center.png";
 import incomeGuideImg from "../../../images/income_guide.png";
 import inviteFrndsImg from "../../../images/invite_friends.png";
-import tiktakImg from "../../../images/tiktak.png";
 import videoTutorialImg from "../../../images/video_tutorial.png";
+import tiktakImg from "../../../images/youtube2.jpg";
 import "./home.css";
 
 const randomText = [
@@ -99,7 +99,7 @@ function Home() {
           <img src={facebookImg} alt="" />
         </div>
         <div className="home_icon">
-          <img src={tiktakImg} alt="" />
+          <img style={{ height: "328px" }} src={tiktakImg} alt="" />
         </div>
       </div>
     </div>

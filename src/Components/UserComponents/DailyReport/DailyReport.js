@@ -42,17 +42,7 @@ function DailyReport() {
                     {dr?.amount}
                   </span>
                 </p>
-                <p>
-                  Time:
-                  {new Date(dr?.time).toLocaleDateString("en-BD", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                    hour12: true,
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
-                </p>
+                <p>Time:{dr?.time}</p>
               </div>
             ))
           )}
