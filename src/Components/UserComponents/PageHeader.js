@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-import sunImg from "../../images/app_icon.jpeg";
+import sunImg from "../../images/boom.jpeg";
 import "./page.css";
 function Pageheader({ text }) {
   return (

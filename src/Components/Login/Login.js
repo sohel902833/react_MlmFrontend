@@ -2,8 +2,8 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { BeatLoader } from "react-spinners";
 import { useAuth } from "../../context/AuthContext";
-import sunImg from "../../images/app_icon.jpeg";
 import bgImg from "../../images/bg.jpg";
+import sunImg from "../../images/boom.jpeg";
 import { axiosPost } from "../ApiCall/axiosApi";
 import "./log.css";
 
@@ -27,7 +27,6 @@ const Login = () => {
         phone,
         password,
       });
-      console.log(res);
       if (res.status === 201) {
         localStorage.setItem("token", res?.data?.token);
         await getUser();

@@ -8,7 +8,7 @@ import helpCenterImg from "../../../images/help_center.png";
 import incomeGuideImg from "../../../images/income_guide.png";
 import inviteFrndsImg from "../../../images/invite_friends.png";
 import videoTutorialImg from "../../../images/video_tutorial.png";
-import tiktakImg from "../../../images/youtube2.jpg";
+import tiktakImg from "../../../images/youtube.png";
 import "./home.css";
 
 const randomText = [
