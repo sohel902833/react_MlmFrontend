@@ -3,10 +3,10 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../../context/AuthContext";
 import useNewNotification from "../../../hooks/userNewNotification";
-import sunImg from "../../../images/app_icon.jpeg";
 import bgImg from "../../../images/bg.jpg";
 import inviteFrndsImg from "../../../images/invite_friends.png";
 import messageImg from "../../../images/msg.png";
+import sunImg from "../../../images/net.jpg";
 import profileImg from "../../../images/profile.png";
 import settingImg from "../../../images/setting.png";
 import withdrawImg from "../../../images/withdraw.png";
@@ -80,7 +80,7 @@ function Mine() {
         <div style={{ display: "flex", alignItems: "center" }}>
           <img src={sunImg} alt="" />
 
-          <h3 style={{ fontWeight: "bolder", color: "white" }}>BOOM CASH</h3>
+          <h3 style={{ fontWeight: "bolder", color: "white" }}>NETWORK KINGG</h3>
         </div>
         <div>
           <h4 style={{ color: "white" }}>

@@ -3,6 +3,7 @@ import { url as baseUrl } from "./URL";
 export const axiosPost = async (url, token, body) => {
   let data = {};
   const hitUrl = `${baseUrl}${url}`;
+  console.log(hitUrl);
   await axios
     .post(hitUrl, body, {
       headers: {

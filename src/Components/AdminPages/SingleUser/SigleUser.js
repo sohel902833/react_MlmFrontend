@@ -4,9 +4,11 @@ import { useParams } from "react-router-dom";
 import { axiosGet } from "../../ApiCall/axiosApi";
 import AdminLayout from "../../Layout/AdminLayout";
 import Loader from "../../Layout/Loader";
+import ResetPassword from "./ResetPassword";
 function SigleUser() {
   const [user, setUser] = React.useState({});
   const [loading, setLoading] = React.useState(false);
+  const [showUpdateSection, setShowUpdateSection] = React.useState(false);
 
   React.useEffect(() => {
     getUser();
@@ -63,6 +65,16 @@ function SigleUser() {
         <br />
         <hr />
         <br />
+
+        <h4
+          style={{ cursor: "pointer" }}
+          onClick={() => setShowUpdateSection(!showUpdateSection)}
+        >
+          Click To Update User
+        </h4>
+        {showUpdateSection && (
+          <ResetPassword getUser={getUser} userId={userId} />
+        )}
       </div>
       <Typography variant="h4">Earning History: </Typography>
       <br />

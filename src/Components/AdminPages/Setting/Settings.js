@@ -81,6 +81,12 @@ function Settings() {
       inputType: "text",
       property: "helpCenter",
     },
+    {
+      value: setting?.alertMessage,
+      title: "Alert Message",
+      inputType: "text",
+      property: "alertMessage",
+    },
   ];
 
   const getSetting = async () => {

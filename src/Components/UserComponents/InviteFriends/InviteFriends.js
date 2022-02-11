@@ -44,9 +44,9 @@ function InviteFriends() {
               }}
             >
               <a
-                href={`https://boomcashgold.com/register?referCode=${currentUser?.myReferCode}`}
+                href={`https://netwokingg.com/register?referCode=${currentUser?.myReferCode}`}
               >
-                {`https://boomcashgold.com/register?referCode=${currentUser?.myReferCode}`}
+                {`https://netwokingg.com/register?referCode=${currentUser?.myReferCode}`}
               </a>
             </span>
           </h5>
@@ -54,7 +54,7 @@ function InviteFriends() {
           <button
             onClick={() =>
               copy(
-                `https://boomcashgold.com/register?referCode=${currentUser?.myReferCode}`
+                `https://netwokingg.com/register?referCode=${currentUser?.myReferCode}`
               )
             }
             className="copy_button"

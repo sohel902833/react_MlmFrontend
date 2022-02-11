@@ -23,11 +23,11 @@ function Membershipitem({ membership }) {
         </div>
         <div className="m_right">
           <h4>
-            {membership?.levelName} : ${membership?.price} USD
+            {membership?.levelName} : {membership?.price} BDT
           </h4>
           <p>Number of jobs per day: {membership?.numOfJobs}</p>
-          <p>Monthly Income: {membership?.monthlyIncome} USD</p>
-          <p>Validity Period Day: {membership?.validityDay} USD</p>
+          <p>Monthly Income: {membership?.monthlyIncome} BDT</p>
+          <p>Validity Period Day: {membership?.validityDay} BDT</p>
         </div>
       </div>
     </Link>

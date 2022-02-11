@@ -1,7 +1,7 @@
 .message_container {
   max-width: 100vw;
   background: white;
-  height: 85vh;
+  height: 100vh;
   box-sizing: border-box;
   display: flex;
 }
@@ -37,12 +37,13 @@
   bottom: 0;
   position: absolute;
   position: sticky;
-  height: 60px;
+  height: 80px;
   z-index: 100;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .m_main {
   height: 100%;

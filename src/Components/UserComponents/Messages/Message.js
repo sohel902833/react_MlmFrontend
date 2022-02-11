@@ -204,7 +204,7 @@ function Message() {
                 {messageLoading ? (
                   <BeatLoader loading={loading} />
                 ) : (
-                  <SendOutlined onClick={() => sendMessage()} fontSize="20" />
+                  <SendOutlined onClick={() => sendMessage()} fontSize="40" />
                 )}
               </div>
             </div>

@@ -2,14 +2,14 @@ import {
   BottomNavigation,
   BottomNavigationAction,
   Box,
-  Paper,
+  Paper
 } from "@material-ui/core";
 import {
   AddLocationOutlined,
   ArchiveRounded,
   FavoriteBorderOutlined,
   GroupOutlined,
-  HomeOutlined,
+  HomeOutlined
 } from "@material-ui/icons";
 import * as React from "react";
 import Home from "../Home/Home";
@@ -20,6 +20,7 @@ import Pageheader from "../PageHeader";
 import Task from "../Task/Task";
 import "./h.css";
 import styles from "./home.module.css";
+
 export default function BottomNav() {
   const [value, setValue] = React.useState(0);
   const ref = React.useRef(null);

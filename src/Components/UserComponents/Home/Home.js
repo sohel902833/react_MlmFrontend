@@ -7,8 +7,9 @@ import facebookImg from "../../../images/facebook.png";
 import helpCenterImg from "../../../images/help_center.png";
 import incomeGuideImg from "../../../images/income_guide.png";
 import inviteFrndsImg from "../../../images/invite_friends.png";
+import tiktakImg from "../../../images/tiktak.png";
 import videoTutorialImg from "../../../images/video_tutorial.png";
-import tiktakImg from "../../../images/youtube2.jpg";
+import ShowAlertDialog from "./AlertDialog";
 import "./home.css";
 
 const randomText = [
@@ -31,6 +32,16 @@ function Home() {
   const helpCenter = appSetting?.helpCenter;
   const history = useHistory();
   const [currentText, setCurrentText] = React.useState(randomText[0]);
+  const [showAlertDialog, setShowAlertDialog] = React.useState(false);
+  const [text, setText] = React.useState(1);
+
+  React.useEffect(() => {
+    if (sessionStorage.getItem("isShow")) {
+    } else {
+      setShowAlertDialog(true);
+      sessionStorage.setItem("isShow", true);
+    }
+  }, [text]);
 
   React.useEffect(() => {
     setTimer();
@@ -96,13 +107,16 @@ function Home() {
       </Typography>
       <div className="home_icons">
         <div className="home_icon">
-          <img src={facebookImg} alt="" />
+          <img style={{ height: "268px" }} src={facebookImg} alt="" />
         </div>
         <div className="home_icon">
-          <img style={{ height: "328px" }} src={tiktakImg} alt="" />
+          <img style={{ height: "268px" }} src={tiktakImg} alt="" />
         </div>
       </div>
-    </div>
+      {showAlertDialog && (
+        <ShowAlertDialog setOpen={setShowAlertDialog} setting={appSetting} />
+      )}
+     </div>
   );
 }
 

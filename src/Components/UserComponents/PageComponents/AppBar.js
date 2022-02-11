@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 import { ArrowBackIosSharp } from "@material-ui/icons";
 import React from "react";
 import { useHistory } from "react-router-dom";
-import sunImg from "../../../images/app_icon.jpeg";
+import sunImg from "../../../images/net.jpg";
 import "./appbar.css";
 function AppBar({ title, backUrl }) {
   const history = useHistory();
@@ -17,7 +17,7 @@ function AppBar({ title, backUrl }) {
         />
         <img src={sunImg} alt="" />
         <Typography className="logo_title" variant="h6">
-          BOOM CASH
+        NETWORK KINGG
         </Typography>
       </div>
       <div className="header_right">

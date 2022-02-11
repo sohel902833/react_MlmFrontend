@@ -1,6 +1,6 @@
 {
-  "name": "tolikeglobal",
-  "homepage": "https://tolikeglobal.com/",
+  "name": "netwokingg",
+  "homepage": "https://netwokingg.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,6 +28,7 @@
     "react-dom": "^17.0.2",
     "react-drag-and-drop": "^3.0.0",
     "react-loading": "^2.0.3",
+    "react-messenger-customer-chat": "^0.8.0",
     "react-modal": "^3.14.2",
     "react-native-floating-bubble": "^1.0.7",
     "react-preloaders": "^3.0.3",

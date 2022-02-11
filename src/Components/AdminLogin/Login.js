@@ -25,6 +25,7 @@ const Login = () => {
         email: phone,
         password,
       });
+      console.log(res);
       if (res.status === 201) {
         localStorage.setItem("admin-token", res.data.token);
         await getAdmin();

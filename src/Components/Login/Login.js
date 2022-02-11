@@ -2,8 +2,8 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { BeatLoader } from "react-spinners";
 import { useAuth } from "../../context/AuthContext";
-import sunImg from "../../images/app_icon.jpeg";
 import bgImg from "../../images/bg.jpg";
+import sunImg from "../../images/net.jpg";
 import { axiosPost } from "../ApiCall/axiosApi";
 import "./log.css";
 
@@ -55,7 +55,7 @@ const Login = () => {
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <img src={sunImg} alt="" />
-        <h2>BOOM CASH</h2>
+        <h2>NETWORK KINGG</h2>
       </div>
       <div className="login_items">
         <p>Account Number Or Email</p>

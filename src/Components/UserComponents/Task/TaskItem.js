@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@material-ui/core";
 import React from "react";
 import fbImage from "../../../images/facebook.png";
-import tiktakImg from "../../../images/youtube.png";
+import tiktakImg from "../../../images/tiktak.png";
 import { axiosPost } from "../../ApiCall/axiosApi";
 import "./task.css";
 function TaskItem({ task, filterTask }) {
@@ -32,7 +32,7 @@ function TaskItem({ task, filterTask }) {
                 alt=""
               />
               <div className="task_top_left_data">
-                <h4>{task?.brand === "Facebook" ? task?.brand : "Youtube"}</h4>
+                <h4>{task?.brand === "Facebook" ? task?.brand : "Tiktak"}</h4>
                 <p>Like</p>
               </div>
             </div>

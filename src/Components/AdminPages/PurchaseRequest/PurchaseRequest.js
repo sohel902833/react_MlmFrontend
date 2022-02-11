@@ -89,6 +89,7 @@ function PurchaseRequest() {
             <th>Level Id</th>
             <th>Level Name</th>
             <th>Trx Number</th>
+            <th>Payment Method</th>
             <th>Time</th>
             {state === "paid" || <th colspan="3">action</th>}
           </thead>
@@ -102,6 +103,7 @@ function PurchaseRequest() {
                 <td>{data?.membershipId}</td>
                 <td>{data?.levelName}</td>
                 <td>{data?.trxNumber}</td>
+                <td>{data?.paymentMethod}</td>
                 <td>
                   {new Date(data.time).toLocaleDateString("en-BD", {
                     year: "numeric",

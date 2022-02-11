@@ -36,13 +36,13 @@ function Member() {
         <div className="membership_details_card">
           <h4>
             {currentUser?.currentMembership?.levelName
-              ? `${currentUser?.currentMembership?.levelName} : ${currentUser?.currentMembership?.price} USD`
-              : "Free : 0 USD"}
+              ? `${currentUser?.currentMembership?.levelName} : ${currentUser?.currentMembership?.price} BDT`
+              : "Free : 0 BDT"}
           </h4>
           <p>
             {currentUser?.currentMembership?.monthlyIncome
-              ? `Monthly Income :  ${currentUser?.currentMembership?.monthlyIncome} USD`
-              : "Monthly Income : 0 USD"}
+              ? `Monthly Income :  ${currentUser?.currentMembership?.monthlyIncome} BDT`
+              : "Monthly Income : 0 BDT"}
           </p>
           <p>
             {currentUser?.currentMembership?.numOfJobs
